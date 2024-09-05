@@ -20,6 +20,20 @@ export default {
 
         biggerPc: "1000px",
       },
+      keyframes: {
+        'modal-overlay': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'modal-content': {
+          '0%': { opacity: '0', transform: 'scale(0.9) translateY(20px)' },
+          '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+        },
+      },
+      animation: {
+        'modal-overlay': 'modal-overlay 0.3s ease-out',
+        'modal-content': 'modal-content 0.3s ease-out',
+      },
     },
   },
   plugins: [],

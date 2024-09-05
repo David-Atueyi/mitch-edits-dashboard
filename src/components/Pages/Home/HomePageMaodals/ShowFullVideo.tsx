@@ -24,8 +24,8 @@ export const ShowFullVideo: React.FC<ShowFullVideoProps> = ({ selectedVideo, onC
   if (!selectedVideo) return null;
 
   return (
-    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-zinc-900 p-4 rounded-lg max-w-[90%] max-h-[90%]">
+    <div className="mobile:fixed pc:absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 animate-modal-overlay">
+      <div className="bg-zinc-900 p-4 rounded-lg max-w-[90%] max-h-[90%] animate-modal-content">
         <video
           ref={modalVideoRef}
           src={selectedVideo}

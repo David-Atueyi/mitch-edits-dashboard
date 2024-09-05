@@ -99,7 +99,7 @@ export const HomePage = () => {
           </p>
         </div>
       ) : (
-        <div className="gap-4 grid grid-cols-1 tablet:grid-cols-3 biggerPc:grid-cols-4 mt-14">
+        <div className="mobile:gap-14 tablet:gap-4 grid grid-cols-1 tablet:grid-cols-3 biggerPc:grid-cols-4 mt-14">
           {projects?.map((project, index) => (
             <div
               key={project.id}
