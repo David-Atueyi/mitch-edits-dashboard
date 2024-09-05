@@ -6,10 +6,9 @@ import { LogInPage } from "./pages/LogInPage";
 import { ClientTablePage } from "./pages/ClientTablePage";
 import { CreateClientPage } from "./pages/CreateClientPage";
 import { AddProjectPage } from "./pages/AddProjectPage";
-import { useGetClients } from "./components/base/utilities/handleClients/useGetClients";
+
 
 function App() {
-  useGetClients();
   return (
     <div className="bg-black">
       <Routes>
